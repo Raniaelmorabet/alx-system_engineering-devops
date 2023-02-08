@@ -8,3 +8,5 @@
    * this script display the current directory contents in a long format
 5. hidden files
    * this script display current directory contents including hidden files
+6. i love numbers
+   * this script display current directory contents with user and group IDs numerically with hidden files too
