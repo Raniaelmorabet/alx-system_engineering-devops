@@ -6,3 +6,5 @@
    * this script changes the working directory to the user's home directory
 4. the long format
    * this script display the current directory contents in a long format
+5. hidden files
+   * this script display current directory contents including hidden files
