@@ -18,3 +18,11 @@
    * this script delete the file betty in the tmp/my first directory
 10. bye bye My first directory
    * this script delete the directory my first directory in the tmp directory
+11. back to the future
+   * this script changes the working directory to the previous one
+12. lists
+   * this script list all files in long format
+13. file type
+   * this script prints the type of the file 
+14. copy HTML files
+   * this script create copies all the html files from the current working directory to the parent of the working directory 
