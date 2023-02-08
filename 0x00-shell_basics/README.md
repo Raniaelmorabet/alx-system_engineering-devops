@@ -10,3 +10,5 @@
    * this script display current directory contents including hidden files
 6. i love numbers
    * this script display current directory contents with user and group IDs numerically with hidden files too
+7. welcome
+   * this script display a directory named my first directory in the tmp directory
