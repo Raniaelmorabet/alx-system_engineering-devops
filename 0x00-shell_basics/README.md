@@ -12,3 +12,5 @@
    * this script display current directory contents with user and group IDs numerically with hidden files too
 7. welcome
    * this script display a directory named my first directory in the tmp directory
+8. betty in my first directory
+   * this script move the file betty from /tmp/ to /tmp/my first directory
