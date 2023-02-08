@@ -14,3 +14,7 @@
    * this script display a directory named my first directory in the tmp directory
 8. betty in my first directory
    * this script move the file betty from /tmp/ to /tmp/my first directory
+9. bye bye betty
+   * this script delete the file betty in the tmp/my first directory
+10. bye bye My first directory
+   * this script delete the directory my first directory in the tmp directory
