@@ -44,3 +44,11 @@
    * a script that reverse its input.
 23. DJ Cut Killer
    * Write a script that displays all users and their home directories, sorted by users.
+24. Empty casks make the most noise
+   *  a command that finds all empty files and directories in the current directory and all sub-directories
+25. A gif is worth ten thousand words
+   * a script that lists all the files with a .gif extension in the current directory and all its sub-directories
+26. Acrostic
+   * n acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word, message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis). As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval.
+27. The biggest fan
+   * a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests
