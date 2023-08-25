@@ -27,18 +27,8 @@ Puppet Mode is a major mode for [GNU Emacs](https://www.gnu.org/software/emacs/
 - **unless**: Specifies a command to run, and if it returns non-zero, the exec resource will run.
 - **onlyif**: Specifies a command to run, and if it returns zero, the exec resource will run.
 
-***execute a command with puppet :*** 
+***execute a command with puppet*** 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9800db55-cee4-42ef-bac2-d8b986c3c50c/Untitled.png)
-
-***install a package with puppet :***
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18044a2e-b317-4d92-ba04-1bee9f5225e4/Untitled.png)
-
-***example :*** 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aac3b76d-797b-4861-b93b-a9aa2429d498/Untitled.png)
+***install a package with puppet***
 
 ***creating a file with puppet*** 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a0006be8-3f8e-4516-bd34-f495077f8c0b/Untitled.png)
