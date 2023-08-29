@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# A script to install nginx on a server
+config="/etc/nginx/sites-available/default"
+
+# Install nginx
+apt-get -y update
+apt-get -y install nginx
+service nginx start
+ufw allow 'Nginx HTTP'
+chown -R "$USER":"$USER" /var/www/html
+chmod -R 755 /var/www
+echo "Hello World!" > "/var/www/html/index.html"
+sudo sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://www.linkedin.com/in/rania-el-morabet-46030419b/ permanent;" $config
+echo "Ceci n'est pas une page" > "/var/www/html/404.html"
+sed -i "/listen 80 default_server;/a error_page 404 /404.html; location = /404.html {root  /var/www/html;\n internal;}" $config
+service nginx restart
