@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 # A script to install nginx on a server
 apt-get -y update
 apt-get -y install nginx
@@ -7,6 +7,6 @@ ufw allow 'Nginx HTTP'
 chown -R "$USER":"$USER" /var/www/html
 chmod -R 755 /var/www
 echo "Hello World!" > '/var/www/html/index.html'
-sudo sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://linkedin.com/in/achrafelkhnissi/ permanent;" /etc/nginx/sites-available/default
+sudo sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://www.linkedin.com/in/rania-el-morabet-46030419b/ permanent;" /etc/nginx/sites-available/default
 nginx -s reload
 service nginx restart
