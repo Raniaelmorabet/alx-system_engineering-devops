@@ -3,7 +3,6 @@ package { 'nginx':
   ensure => installed,
 }
 
-# Nginx config
 file_line { 'redirect_me':
   ensure => 'present',
   path   => '/etc/nginx/sites-available/default',
@@ -11,13 +10,12 @@ file_line { 'redirect_me':
   line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
 }
 
-# Nginx config
 file { '/var/www/html/index.html':
   content => 'Hello World!',
 }
 
-# Nginx service
 service { 'nginx':
   ensure  => running,
   require => Package['nginx'],
 }
+
