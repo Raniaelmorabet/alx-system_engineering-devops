@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
-# A script to install nginx on a server
-config="/etc/nginx/sites-available/default"
-
-# Install nginx
+# script to install and setup nginx
 apt-get -y update
 apt-get -y install nginx
-service nginx start
-ufw allow 'Nginx HTTP'
-chown -R "$USER":"$USER" /var/www/html
-chmod -R 755 /var/www
-echo "Hello World!" > "/var/www/html/index.html"
-sudo sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://www.linkedin.com/in/rania-el-morabet-46030419b/ permanent;" $config
-echo "Ceci n'est pas une page" > "/var/www/html/404.html"
-sed -i "/listen 80 default_server;/a error_page 404 /404.html; location = /404.html {root  /var/www/html;\n internal;}" $config
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+sed -i "/server_name _;/ a\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
+sed -i "/redirect_me/ a\\\terror_page 404 /custom_404.html;" /etc/nginx/sites-available/default
 service nginx restart
