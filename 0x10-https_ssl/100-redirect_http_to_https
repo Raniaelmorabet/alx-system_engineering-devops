@@ -51,7 +51,7 @@ frontend www-http
         default_backend www-backend
 
 frontend www-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.melissax.online.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.rania-elmorabet.online.pem
         reqadd X-Forwarded-Proto:\ https
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
@@ -60,8 +60,8 @@ frontend www-https
 backend www-backend
         balance roundrobin
         redirect scheme https code 301 if !{ ssl_fc }
-        server 338-web-01 35.229.54.225:80 check
-        server 338-web-02 35.231.225.251:80 check
+        server 271776-web-01 100.25.169.237:80 check
+        server 271776-web-02 100.25.194.227:80 check
 
 backend letsencrypt-backend
         server letsencrypt 127.0.0.1:54321
@@ -71,5 +71,5 @@ backend letsencrypt-backend
 #       balance roundrobin
 #       option httpclose
 #       option forwardfor
-#       server 338-web-01 35.229.54.225:80 check
-#       server 338-web-02 35.231.225.251:80 check
+#       server 271776-web-01 100.25.169.237:80 check
+#       server 271776-web-02 100.25.194.227:80 check
